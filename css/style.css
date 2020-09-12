@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    color: #fff;
+}
+
+.night {
+    background-image: url('../img/night.jpg');
+    background-size: cover;
+    color: #fff;
+}
+
+.morning {
+    background-image: url('../img/morning.jpg');
+    background-size: cover;
+}
+
+.afternoon {
+    background-image: url('../img/afternoon.jpg');
+    background-size: cover;
+}
+
+.evening {
+    background-image: url('../img/evening.jpg');
+    background-size: cover;
+}
+
+.time {
+    font-size: 80px;
+}
+
+.heading {
+    font-size: 27px;
+    margin: 0 0 15px;
+}
+
+.greeting {
+    margin: 0 0 5px;
+}
+
+.name {
+    font-size: 30px;
+    background: rgba(17,17,17,.5);
+    padding: 5px;
+    margin: 0 -30px;
+    border: 2px solid rgba(255,255,255,.1);
+    border-radius: 5px;
+    min-width: 300px;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(17,17,17,.5);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.focus-question, .focus-edit {
+    padding: 0 0 5px;
+}
+
+.focus-question {
+    font-size: 24px;
+}
+
+.focus-edit {
+    display: block;
+    min-width: 300px;
+    font-size: 27px;
+    background: rgba(17,17,17,.5);
+    padding: 5px;
+    margin: 0 -25px;
+    border: 2px solid rgba(255,255,255,.1);
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .time {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 360px) {
+    .name, .focus-edit {
+        min-width: unset;
+    }
+}
